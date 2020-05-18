@@ -1,0 +1,10 @@
+body {
+  background: purple;
+}
+
+#container {
+  width: 360px;
+  margin: 30px auto;
+  border: 2px solid black;
+  background: red;
+}
