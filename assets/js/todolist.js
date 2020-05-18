@@ -4,8 +4,8 @@ $("ul").on("click", "li", function() {
 });
 
 //delete todo
-$("ul").on("click", ".delete-btn", function(event) {
-  $(this).parent().fadeOut(1000, function(){
+$("ul").on("click", ".delete", function(event) {
+  $(this).parent().fadeOut(500, function(){
     $(this).remove();
   });
   event.stopPropagation();
@@ -19,6 +19,11 @@ $("input[type='text']").keypress(function(event){
     //clear input text
     $(this).val("");
     //add <li> to <ul>
-    $("ul").append("<li><span class='delete-btn'>X</span> " + todoText + "</li>");
+    $("ul").append("<li><span class='delete'><i class='fas fa-trash'></i></span> " + todoText + "</li>");
   }
-})
+});
+
+//plus icon
+$("#plus").on("click", function(){
+  $("input[type='text']").fadeToggle(300);
+});

@@ -5,17 +5,31 @@
     <title>To-Do List</title>
     <script src="assets/js/lib/jquery-3.5.1.js" charset="utf-8"></script>
     <link rel="stylesheet" href="assets/css/todolist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f6c17ff2c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="container">
-      <h1>TO-DO LIST</h1>
+      <h1 id="title">TO-DO LIST <span id="plus"><i class="fas fa-plus"></i><span></h1>
       <input type="text" name="item" value="" placeholder="Add a new to-do...">
       <ul id="todos">
-        <li><span class="delete-btn">X</span> Wash car</li>
-        <li><span class="delete-btn">X</span> Attend math class</li>
-        <li><span class="delete-btn">X</span> Shop for bananas</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Go through project files</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Finish CS assignment</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Attend math class</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Call mom</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Visit grandma</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Shop for bananas</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Read 50 pages</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Change bedsheets</li>
+        <li><span class="delete"><i class="fas fa-trash"></i></span> Wash car</li>
       </ul>
     </div>
+
+    <footer
+      <span>Developed by </span>
+      <a href="https://www.github.com/mizanxali">@mizanxali</a>
+    </footer>
+
     <script src="assets/js/todolist.js" charset="utf-8"></script>
   </body>
 </html>
